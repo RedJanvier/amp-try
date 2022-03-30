@@ -20,7 +20,7 @@ export const ProductEdit = (props: EditProps): React.ReactElement => {
         <NumberInput label="Item Price" source="itemPrice" />
         <TextInput label="Name" source="name" />
         <ReferenceArrayInput
-          source="order"
+          source="orders"
           reference="Order"
           parse={(value: any) => value && value.map((v: any) => ({ id: v }))}
           format={(value: any) => value && value.map((v: any) => v.id)}
