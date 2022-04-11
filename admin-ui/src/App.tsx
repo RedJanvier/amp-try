@@ -29,6 +29,10 @@ import { MessageList } from "./message/MessageList";
 import { MessageCreate } from "./message/MessageCreate";
 import { MessageEdit } from "./message/MessageEdit";
 import { MessageShow } from "./message/MessageShow";
+import { TrialList } from "./trial/TrialList";
+import { TrialCreate } from "./trial/TrialCreate";
+import { TrialEdit } from "./trial/TrialEdit";
+import { TrialShow } from "./trial/TrialShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -96,6 +100,13 @@ const App = (): React.ReactElement => {
           edit={MessageEdit}
           create={MessageCreate}
           show={MessageShow}
+        />
+        <Resource
+          name="Trial"
+          list={TrialList}
+          edit={TrialEdit}
+          create={TrialCreate}
+          show={TrialShow}
         />
       </Admin>
     </div>
