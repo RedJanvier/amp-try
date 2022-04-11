@@ -73,3 +73,9 @@ model Message {
   title     String
   updatedAt DateTime @updatedAt
 }
+
+model Trial {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
